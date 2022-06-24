@@ -24,11 +24,11 @@ type iMac struct {
 }
 
 func (phone iPhone) turnOn() string {
-	return "iOS now starting up..."
+	return "iOS starting up..."
 }
 
 func (mac iMac) turnOn() string {
-	return "macOS now starting up..."
+	return "macOS starting up..."
 }
 
 func (phone *iPhone) update(v float32) {
