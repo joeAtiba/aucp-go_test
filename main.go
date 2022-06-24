@@ -28,7 +28,7 @@ func (phone iPhone) turnOn() string {
 }
 
 func (mac iMac) turnOn() string {
-	return "macOS starting up..."
+	return "macOS is starting up..."
 }
 
 func (phone *iPhone) update(v float32) {
