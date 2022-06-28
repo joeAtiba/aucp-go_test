@@ -24,11 +24,11 @@ type iMac struct {
 }
 
 func (phone iPhone) turnOn() string {
-	return "iOS is now starting up..."
+	return "iOS starting up..."
 }
 
 func (mac iMac) turnOn() string {
-	return "macOS is now starting up..."
+	return "macOS starting up..."
 }
 
 func (phone *iPhone) update(v float32) {
@@ -45,6 +45,9 @@ func main() {
 
 	dev1 := iPhone{"iPhone", "17 Pro", 13.1}
 	dev2 := iMac{"iMac", "27 15k Retina", 10.15}
+
+	fmt.Println(dev1.turnOn())
+	fmt.Println(dev2.turnOn())
 
 	devices := []device{&dev1, &dev2}
 
