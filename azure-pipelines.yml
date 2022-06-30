@@ -26,3 +26,4 @@ steps:
 
 - script: echo "$(ls -lasF .)"
 
+- script: ./interfaces
