@@ -47,7 +47,9 @@ pipeline {
                     echo 'Running vetting'
                     sh 'go vet .'
                     echo 'Running linting'
-                    sh 'golint .'
+                    // this fails with 'golint: command no found'
+                    //     sh 'golint .'
+                    sh '/var/lib/jenkins/jobs/pipeline-jb-test-02/builds/12/pkg/mod/golang.org/x/lint@v0.0.0-20210508222113-6edffad5e616/golint/golint .'
                 }
             }
         }
